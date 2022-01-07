@@ -25,10 +25,8 @@
     "bump:minor": "npm version minor -m 'release: cut the %s release'",
     "bump:major": "npm version major -m 'release: cut the %s release'",
     "preversion": "npm run test && npm run build",
-    "postversion": "git push && git push --tags && npm publish",
-    "postinstall": "npm install && npm run build"
+    "postversion": "git push && git push --tags && npm publish"
   },
-  "install": "npm run build",
   "files": [
     "docs",
     "dist",
